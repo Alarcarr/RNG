@@ -1,0 +1,128 @@
+Model: Fighter
+	Tangents: On
+	Mesh: data/models/Ship10.obj
+
+Model: Debris
+	Mesh: data/models/debris.obj
+
+Model: Sphere_med
+	Sphere: 24x12
+
+Model: Sphere_high
+	Sphere: 32x16
+	//LOD: Sphere_med > 60
+
+Model: Sphere_vhigh
+	Sphere: 64x32
+	LOD: Sphere_high > 20
+
+Model: Sphere_max
+	Sphere: 128x64
+	LOD: Sphere_vhigh > 8
+
+Model: Asteroid_lod2
+	Tangents: On
+	Mesh: data/models/asteroid_lod2.obj
+	
+Model: Asteroid_lod1
+	Tangents: On
+	Mesh: data/models/asteroid_lod1.obj
+	LOD: Asteroid_lod2 > 40
+
+Model: Asteroid
+	Tangents: On
+	Mesh: data/models/asteroid_lod0.obj
+	LOD: Asteroid_lod1 > 22
+	
+Model: Warpgate
+	Mesh: data/models/gate.ogex
+
+Model: Shipyard
+	Mesh: data/models/shipyard.ogex
+
+Model: Prominence
+	Mesh: data/models/prominence.obj
+	
+Model: Obelisk
+	Mesh: data/models/anomalies/obelisk.obj
+
+Model: Artifact
+	Tangents: On
+	Mesh: data/models/artifact.ogex
+
+Model: ArtifactAdvanced
+	Tangents: On
+	Mesh: data/models/artifact_advanced.ogex
+	
+Model: Ship_Debris_1
+	Mesh: data/models/ship_debris_1.obj
+	
+Model: Ship_Debris_2
+	Mesh: data/models/ship_debris_2.obj
+
+Model: PlanetRing
+	Tangents: On
+	Mesh: data/models/planet_disc_32.obj
+
+Model: SporeShip
+	Mesh: data/models/spore-ship.obj
+
+Model: ColonyShip
+	Mesh: data/models/colony-ship.ogex
+
+Model: Habitat
+	Mesh: data/models/habitat.ogex
+
+Model: RingworldOuter
+	Mesh: data/models/ringworld_outer.obj
+
+Model: RingworldInner
+	Mesh: data/models/ringworld_inner.obj
+
+Model: RingworldLiving
+	Mesh: data/models/ringworld_living.obj
+
+Model: CommerceStation
+	Tangents: On
+	Mesh: data/models/commerce_station.ogex
+
+Model: Mainframe
+	Tangents: On
+	Mesh: data/models/mainframe.ogex
+
+Model: DefenseStation
+	Tangents: On
+	Mesh: data/models/defense_station.ogex
+
+Model: Depot
+	Tangents: On
+	Mesh: data/models/depot.ogex
+
+Model: Fling
+	Tangents: On
+	Mesh: data/models/fling_beacon.ogex
+
+Model: FTLJammer
+	Tangents: On
+	Mesh: data/models/ftl_jammer.ogex
+
+Model: Temple
+	Tangents: On
+	Mesh: data/models/star_temple.ogex
+
+Model: Research_Station
+	Tangents: On
+	Mesh: data/models/research_station.ogex
+
+Model: Observatory
+	Tangents: On
+	Mesh: data/models/observatory.ogex
+	
+Model: Ring
+	Mesh: data/models/ring.obj
+
+Model: ITank
+	Mesh: data/models/itank.obj
+	
+	
+	

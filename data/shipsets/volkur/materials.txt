@@ -1,0 +1,78 @@
+Material: VolkurTemplate
+	Shader: SupportShip
+	Shininess: 12
+
+Material: VolkurPBRTemplate
+	Shader: PBRShip
+	Shininess: 12
+
+Material: VolkurBlueprint
+	Shader: Blueprint
+	Texture: data/shipsets/volkur/diffuse_old.png
+
+Material: VolkurGenericPBR
+	Inherit: VolkurPBRTemplate
+	Texture: data/shipsets/volkur/diffuse.png
+	Texture2: data/shipsets/volkur/normal.png
+	Texture3: data/images/difference_noise.png
+	Texture4: data/shipsets/volkur/masks.png
+	Cubemap5: data/images/skycube.png
+
+Material: VolkurGenericPBR_Flag
+	Inherit: VolkurPBRTemplate
+	Blend: Alpha
+	Texture: data/shipsets/volkur/diffuse.png
+	Texture2: data/shipsets/volkur/normal.png
+	Texture3: data/images/difference_noise.png
+	Texture4: data/shipsets/volkur/masks.png
+	Cubemap5: data/images/skycube.png
+
+Material: VolkurGeneric
+	Inherit: VolkurTemplate
+	Texture: data/shipsets/volkur/diffuse_old.png
+	Texture2: data/shipsets/volkur/normal_old.png
+	Texture3: data/shipsets/volkur/specular.png
+	Texture4: data/shipsets/volkur/gloss.png
+	Texture5: data/images/skybox.png
+	Texture6: data/shipsets/volkur/masks_old.png
+
+SpriteSheet: VolkurIcons
+	Inherit: DistantIcon
+	DepthWrite: No
+	Shader: NodeColoredSelectable
+	LoadPriority: Game
+	Texture: data/shipsets/volkur/icons.png
+	Size: 18,18
+
+SpriteSheet: VolkurFleetIcons
+	Inherit: DistantIcon
+	DepthWrite: No
+	Shader: ShipGroup
+	LoadPriority: Game
+	Texture: data/shipsets/volkur/fleet_icons.png
+	Size: 64,64
+
+SpriteSheet: VolkurGuiIcons
+	Inherit: IconSet
+	DepthWrite: No
+	Texture: data/shipsets/volkur/icons.png
+	Size: 18,18
+
+Material: VolkurBasic
+	Shader: NormalLighting
+	Texture: data/shipsets/volkur/diffuse.png
+	Texture2: data/shipsets/volkur/normal.png
+
+Material: VolkurTrivial
+	Shader: Lighting
+	Texture: data/shipsets/volkur/diffuse.png
+
+Material: RngInner
+	Shader: Lighting
+	Texture: data/shipsets/volkur/rwinner.png
+Material: RngRing
+	Shader: Lighting
+	Texture: data/shipsets/volkur/rwring.png
+Material: RngFtank
+	Shader: Lighting
+	Texture: data/shipsets/volkur/rwtank.png
